@@ -28,4 +28,8 @@ target_link_libraries(${PROJECT_NAME}
         pico_cyw43_arch_lwip_threadsafe_background
         )
 
+target_include_directories(smart_home PRIVATE
+        ${CMAKE_CURRENT_LIST_DIR}
+)
+
 pico_add_extra_outputs(smart_home)
